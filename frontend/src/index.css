@@ -1,0 +1,21 @@
+@import "tailwindcss";
+
+
+.slider {
+    appearance: none; /* Works for all browsers */
+    height: 100%;
+    background: transparent;
+}
+
+/* For WebKit browsers (Chrome, Safari) */
+.slider::-webkit-slider-thumb {
+    appearance: none;
+    width: 30px;
+    height: 30px;
+    background-image: url('/slide_icon.svg');
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    cursor: pointer;
+    border: none;
+}
