@@ -7,7 +7,7 @@ const BuyCredit = () => {
       <h1 className="text-center text-2xl md:text-3xl lg:text-4xl mt-4 font-semibold bg-gradient-to-r from-gray-900 to-gray-400 bg-clip-text text-transparent pb-6">Choose the plan that's right for you</h1>
       <div className="flex flex-wrap justify-center gap-6 text-left">
         {plans.map((item,index)=>(
-          <div className="bg-white drop-shadow-sm rounded-lg py-12 px-8 text-gray-700 hover:scale-105 transition-all duration-500">
+          <div key={index} className="bg-white drop-shadow-sm rounded-lg py-12 px-8 text-gray-700 hover:scale-105 transition-all duration-500">
             <img width={40} src={assets.logo_icon} alt="" />
             <p className="mt-3 font-semibold">{item.id}</p>
             <p className="text-sm">{item.desc}</p>
